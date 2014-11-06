@@ -11,6 +11,7 @@
 9. Tedious.
 
 With HappyPath, you can just do:
+
 1. Navigate to your `posts/new` form.
 2. Fill it out, hit create.
 3. Go do other stuff.
