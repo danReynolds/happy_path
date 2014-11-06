@@ -17,7 +17,7 @@ With HappyPath, you can just do:
 3. Go do other stuff.
 4. Navigate back to your last post with `/posts/last`.
 
-This is enabled for `/last` and `/first`
+This is enabled for `/last` and `/first`.
 
 ## Installation
 
