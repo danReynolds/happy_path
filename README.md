@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/happy_path.svg)](http://badge.fury.io/rb/happy_path)
 # HappyPath
 
 1. Navigate to your `posts/new` form.
