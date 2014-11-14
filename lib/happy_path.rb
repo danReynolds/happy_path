@@ -4,7 +4,7 @@ module HappyPath
   def setup_happy_path
     rescue_from ActiveRecord::RecordNotFound do |e|
       class_constant = controller_name.classify.constantize
-      raise e unless self.respond_to?(:happy_paths) && self.respond_to?(:show) && HappyPath::PATHS.include?(params[:id]) && !class_constant.count.zero?
+      raise e unless self.respond_to?(:happy_paths) && HappyPath::PATHS.include?(params[:id]) && !class_constant.count.zero?
       self.happy_paths(e, class_constant)
     end
   end
