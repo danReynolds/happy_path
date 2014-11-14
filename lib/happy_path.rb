@@ -1,9 +1,10 @@
 module HappyPath
   extend ActiveSupport::Concern
   PATHS = ['first', 'last']
+  CONTROLLERS = []
   
   def setup_happy_path
-    rescue_from ActiveRecord::RecordNotFound, with: :happy_paths
+    rescue_from ActiveRecord::RecordNotFound, with: :happy_paths if controller_name.classify.constantize
   end
 
   def follow_happy_paths
